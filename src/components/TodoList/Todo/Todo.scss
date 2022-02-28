@@ -1,0 +1,55 @@
+$todoMargin: 10px 0;
+$todoPadding: 10px 15px;
+$todoBorderRradius: 10px;
+$todoWidth: 100%;
+
+.completedSingleTodo {
+  opacity: 0.5;
+}
+
+.resolvedTodoText {
+  text-decoration-line: line-through;
+  color: grey;
+}
+
+.singleTodo {
+  justify-content: space-between;
+  border: 1px solid grey;
+  border-radius: $todoBorderRradius;
+  margin: $todoMargin;
+  padding: $todoPadding;
+  width: $todoWidth;
+  box-shadow: 0px 2px 6px rgb(255, 255, 255, 0.4);
+
+  .description {
+    margin: auto 0;
+  }
+
+  .edit {
+    margin: 0 10px;
+  }
+
+  .resolve {
+    margin: auto 10px;
+    white-space: nowrap;
+  }
+}
+
+.editTodoContainer {
+  margin: $todoMargin;
+  padding: $todoPadding;
+  width: $todoWidth;
+  
+  .editDescription {
+    height: auto;
+  }
+
+  .editButtons {
+    flex-direction: column;
+    padding-left: 20px;
+
+    .cancel {
+      margin-bottom: 15px;
+    }
+  }
+}
